@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link
+    rel="icon"
+    href="logo1.png"
+  />
+   <title>Shoes of JoyStore</title>
+ </head>
+ <body>
+
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i>
+   </div>
+   <div class="side-bar">
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <div class="menu">
+       <div class="item"><a href="index.html"><span class="icon-home glyphicon glyphicon-home"></span></span>HOME</a></div>
+       <div class="item">
+         <a class="sub-btn"><span class="icon-cart glyphicon glyphicon-shopping-cart"></span>SHOP<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="dvspa.html" class="sub-item">DRESS </a> 
+           <a href="dangnhap.html" class="sub-item">TOP</a> 
+           <a href="jean.html" class="sub-item">JEAN</a>
+           <a href="meo.html" class="sub-item">BAG</a>
+           <a href="cho.html" class="sub-item">SHOES</a>
+           <a href="jewels.html" class="sub-item">JEWELS</a>
+           <a href="jacket.html" class="sub-item">JACKET</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="hyhy">
+    <img class="bia"src="TJ.png" alt="">
+   </div>
+   <div class="dcmm">
+    <div class="menu">
+        <ul>
+            <li><a href="dvspa.html"><b>DRESS</b></a></li>
+            <li><a href="cho.html"><b>SHOES</b></a></li>
+            <li><a href="meo.html"><b>BAG</b></a></li>
+            <li><a href="jean.html"><b>JEAN</b></a></li>
+            <li><a href="dangnhap.html"><b>TOP</b></a></li>
+            <li><a href="jewels.html"><b>JEWELS</b></a></li>
+            <li><a href="jacket.html"><b>JACKET</b></a></li>
+        </ul>
+    </div>
+</div>
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
+          <input type="radio" name="radio-btn" id="radio6">
+          <input type="radio" name="radio-btn" id="radio7">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="SSS.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="S.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="N.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="W.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="B.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="C.png" alt="">
+          </div>
+          <div class="slide">
+              <img src="Q.png" alt="">
+          </div>
+  
+         
+         
+    </div>
+       
+</div>
+<script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 7){
+      counter = 1;
+    }
+  }, 5000);
+</script>
+   </section>
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+
+ </body>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 7){
+        counter = 1;
+      }
+    }, 5000);
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+.products {
+    padding: 20px 0;
+    text-align: center;
+}
+.products > div > div {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.products > div:hover > div {
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+.dl-horizontal dt {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dl-horizontal dd {
+    margin-left: 140px;
+    text-align:left;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="sanphamq">
+    <center><p id="tieude1">CL Collection</p></center>
+</div>
+<div class="container">
+  <div class="row products">
+    <div class="col-md-4">
+      <div>
+        <a href="sp4.html"><img src="1.png" alt="Sản phẩm 1" class="img-circle img-thumbnail"></a> 
+        <h2>BLACKCL</h2>
+        <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 800.000đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng có sẵn</dd>
+            <dt>Tình trạng:</dt>
+            <dd> Còn hàng</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Đen</dd>
+          </dl>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div> <img src="2.png" alt="Sản phẩm 2" class="img-circle img-thumbnail">
+        <h2>WHITECL</h2>
+        <dl class="dl-horizontal">
+          <dt>Giá:</dt>
+          <dd> 850.000 đ</dd>
+          <dt>Phân loại:</dt>
+          <dd> Hàng có sẵn</dd>
+          <dt>Tình trạng:</dt>
+          <dd> Còn hàng</dd>
+          <dt>Màu sắc: </dt>
+          <dd>Trắng bạc</dd>
+          </dl>
+         </div>
+    </div>
+    <div class="col-md-4">
+      <div> <img src="3.png" alt="Sản phẩm 3" class="img-circle img-thumbnail">
+        <h2>BADCL</h2>
+        <dl class="dl-horizontal">
+          <dt>Giá:</dt>
+          <dd> 750.000 đ</dd>
+          <dt>Phân loại:</dt>
+          <dd> Hàng có sẵn</dd>
+          <dt>Tình trạng:</dt>
+          <dd> Còn hàng</dd>
+          <dt>Màu sắc: </dt>
+          <dd>Đen</dd>
+          </dl>
+         </div>
+    </div>
+    <center><p id="tieude1">                                  </p></center>
+    <div class="col-md-4">
+        <div> <img src="4.png" alt="Sản phẩm 1" class="img-circle img-thumbnail">
+          <h2>heyCL</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 850.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng có sẵn</dd>
+            <dt>Tình trạng:</dt>
+            <dd> Còn hàng</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Đen</dd>
+            </dl>
+           </div>
+      </div>
+      <div class="col-md-4">
+        <div> <img src="5.png" alt="Sản phẩm 2" class="img-circle img-thumbnail">
+          <h2>BadLV(Louis Vuiton)</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 22.750.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng ORDER</dd>
+            <dt>Tình trạng:</dt>
+            <dd> ORDER</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Đen</dd>
+            </dl>
+           </div>
+      </div>
+      <div class="col-md-4">
+        <div> <img src="6.png" alt="Sản phẩm 3" class="img-circle img-thumbnail">
+          <h2>JimmyChoo Classic Shoes</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 21.700.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng ORDER</dd>
+            <dt>Tình trạng:</dt>
+            <dd> ORDER</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Đen</dd>
+            </dl>
+           </div>
+      </div>
+      <div class="col-md-4">
+        <div> <img src="7.png" alt="Sản phẩm 1" class="img-circle img-thumbnail">
+          <h2>BufelyCL</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 1.250.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng có sẵn</dd>
+            <dt>Tình trạng:</dt>
+            <dd> Còn hàng</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Rainbow</dd>
+            </dl>
+           </div>
+      </div>
+      <div class="col-md-4">
+        <div> <img src="8.png" alt="Sản phẩm 2" class="img-circle img-thumbnail">
+          <h2>STARCL</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 9.750.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng có sẵn</dd>
+            <dt>Tình trạng:</dt>
+            <dd> Còn hàng</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Trắng bạc</dd>
+            </dl>
+           </div>
+      </div>
+      <div class="col-md-4">
+        <div> <img src="9.png" alt="Sản phẩm 3" class="img-circle img-thumbnail">
+          <h2>QUEENCL</h2>
+          <dl class="dl-horizontal">
+            <dt>Giá:</dt>
+            <dd> 2.750.000 đ</dd>
+            <dt>Phân loại:</dt>
+            <dd> Hàng có sẵn</dd>
+            <dt>Tình trạng:</dt>
+            <dd> Còn hàng</dd>
+            <dt>Màu sắc: </dt>
+            <dd>Rainbow</dd>
+            </dl>
+           </div>
+      </div>
+  </div>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<div class="chien">
+  <img class="da"src="getmore.png" alt="">
+ </div>
+    <div class="footer">
+        <div class="footer-edit">
+            <div class="footer-list-information">
+                <ul class="list">
+                    <h3>Danh Mục Được Yêu Thích</h3>
+                    <a href="../html/jjk.html"><li class="item-footer">HIER COLLECTION</li></a> 
+                    <a href="meo.html"><li class="item-footer">Bộ sưu tập túi mới nhất</li></a> 
+                    <a href="../html/hvsah.html"><li class="item-footer">BANG COLLECTION</li></a> 
+                    <a href="../html/op.html"><li class="item-footer">Tư vấn</li></a> 
+                </ul>
+            </div>
+            <div class="footer-list-information">
+                <ul class="list">
+                    <h3>Sản Phẩm Được Yêu Thích</h3>
+                    <a href="../html/orderjjk1.html"><li class="item-footer">JACKET</li></a> 
+                    <a href="../html/kny11.html"><li class="item-footer">TOP</li></a> 
+                    <a href="../html/tr1.html"><li class="item-footer">SHOES</li></a> 
+                    <a href="../html/hvsah2.html"><li class="item-footer">DRESS</li></a> 
+                </ul>
+            </div>
+            <div class="footer-list-information"> 
+                <ul class="list">
+                        <h3>Về Chúng tôi</h3>
+                        <a href="index.html"><li class="item-footer">Giới Thiệu</li></a> 
+                        <a href="mailto:nganntt.21da@vku.udn.vn"><li class="item-footer">Mail: nganntt.21da@vku.udn.vn</li></a> 
+                        <a href="tel:+84708114819"><li class="item-footer">Sđt: 0708114819</li></a> 
+                        <a href=""><li class="item-footer">Điều Khoản & Điều Kiện</li></a> 
+                    </ul>
+            </div>
+            <div class="footer-list-information">
+                <ul class="list">
+                        <h3>Hỗ Trợ Khách Hàng</h3>
+                        <a href="https://www.facebook.com/jessiminW.10111313.noc.chnienj/"><li class="item-footer">Liên Hệ</li></a> 
+                        <a href="../html/hdmh.html"><li class="item-footer">Hướng Dẫn Mua Hàng</li></a> 
+                        <a href=""><li class="item-footer">Chi Nhánh Của JoyStore</li></a> 
+                        <a href=""><li class="item-footer">Chính Sách Bảo Mật</li></a> 
+                    </ul>
+            </div>
+        
+        </div>
+       
+            </div>
+        </div>
+    </div>
+</body>
